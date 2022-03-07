@@ -14,6 +14,6 @@ $connection = new Connection(
 );
 
 $db = new Database($connection);
-$count = $sdb->from('produtos')->count(); //SELECT COUNT(*) FROM produtos;
+$count = $db->from('produtos')->count(); //SELECT COUNT(*) FROM produtos;
 echo 'Há'. $count . 'registros na tabela Produtos'; //Retorno da quantidade de registros dentro da tabela chamada na linha 17;
  ?>
